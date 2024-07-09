@@ -1,0 +1,218 @@
+.signup-cont {
+
+    width:80%;
+    margin:100px auto;
+    background-image: linear-gradient(90deg, white 0% , white 50%, transparent 50%  ), url(../../Assests/images/login1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:0 10px 10px 0;
+}
+
+.signup-cont .frm{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 1px 2px 11px 6px #ddd0d0;
+    padding: 2.5% 0;
+}
+.signup-cont form *{
+    display: block;
+    margin: 0;
+    margin-left: 9%;
+
+}
+
+.signup-cont form input{
+    height: 40px;
+    width: 50%;
+    padding: 5px;
+    border: none;
+    outline: none; 
+    margin-bottom: 10px;
+}
+
+.signup-cont form label{
+    color:#b66b6b;
+}
+.signup-cont form input:not(:placeholder-shown){
+    border-bottom: #d38989 solid 2px;
+}
+
+.signup-cont form button{
+    margin-left: 24%;
+}
+.signup-cont .bot{
+    text-align:center ;
+} 
+
+@media only screen and (max-width: 860px) {
+    .signup-cont{
+        width: 88%;
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    .signup-cont{
+        width: 80%;
+        margin-top: 110px;
+        background-image: linear-gradient( rgba(255,255,255,.4) .5% , rgba(255,255,255,.8) 80% ), url(../../Assests/images/login1.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    
+    }
+
+    .signup-cont .frm{
+        width:100%;
+        margin: auto;
+        padding: 2.5% 0;
+        color: #702b2b;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .signup-cont form *{
+        display: block;
+        margin: 0;
+        margin-left: 0;
+    
+    }
+    .signup-cont form input{
+        height: 30px;
+        width: 50%;
+        margin: 10px 25%;
+        padding: 5px;
+
+    }
+    
+    .signup-cont form label{
+        color: #702b2b;
+    }
+}
+
+
+
+
+/* user type  */
+.userType-con {
+    width: 90%;
+    margin: 100px auto;
+    font-size: 1.01em;
+}
+
+.userType-con h1 {
+    text-align: center;
+}
+
+.userType-con * {
+    padding: 10px;
+}
+
+.userType-con .bdr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1.05em;
+}
+
+.userType-con .shape {
+    border: .1px solid #249262;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+    box-shadow: 0px 5px 2px #249262;
+    margin-bottom: 25px;
+}
+
+.userType-con .shape * {
+    cursor: pointer;
+}
+
+/* radio button shape */
+.userType-con .shape input~.rad {
+    background-color: #f7f6f6;
+    border: 1px solid #32be3e;
+}
+
+.userType-con .shape input:checked~.rad {
+    background-color: #32be3e;
+}
+
+/* custom radio button */
+.userType-con .rad {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #eee;
+    float: right;
+    cursor: pointer;
+}
+
+/* hide default radio */
+.userType-con .shape input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.userType-con .shape img {
+    width: 80%;
+}
+
+.userType-con .last-section {
+    text-align: center;
+    color: #696868;
+}
+
+.userType-con .last-section a {
+    color: #32be3e;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .userType-con .bdr {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .userType-con .shape {
+        justify-content: space-evenly;
+        width: 35%;
+    }
+
+    .userType-con .shape img {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .userType-con .last-section .btn {
+        width: 50%;
+    }
+
+    .userType-con h1 {
+        text-align: left;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .userType-con .shape {
+        width: 30%;
+    }
+
+    .userType-con .last-section .btn {
+        width: 35%;
+    }
+}

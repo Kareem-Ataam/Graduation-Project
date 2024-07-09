@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+/* reset password pages */
+.res-cont{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 100px;
+
+
+}
+.res-cont div:first-child{
+    text-align: center;
+    height:13%;
+
+}
+.res-cont div:nth-child(2){
+height: 60%;
+}
+.res-cont div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+.res-cont div:nth-child(3){
+height: 27%;
+text-align: center;
+}
+.res-cont  label{
+    display: block;
+}
+
+.res-cont  input{
+    width: 70%;
+    margin: auto;
+    height: 30px;
+
+}
+.not a{
+    color: #249262;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    .res-cont{
+        width: 60%;
+    }
+    .res-cont  input{
+        width: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .res-cont{
+        width: 50%;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .res-cont{
+        width: 45%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .res-cont{
+        width: 35%;
+    }
+
+}
+
+.otp{
+    display: flex;
+    width: 30%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.otp input{
+    width: 15%;
+    margin-top: 5px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+    .otp input{
+        width: 18%;
+    }
+    .reset-cont{
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .otp input{
+        width: 18%;
+    }
+    .reset-cont{
+        height: 100vh;
+        justify-content: center;
+    }
+
+    img{
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+    .reset-cont{
+        width: 90%;
+        margin: auto;
+    }
+} */

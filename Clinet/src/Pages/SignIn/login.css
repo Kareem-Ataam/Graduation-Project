@@ -1,0 +1,238 @@
+.login-cont {
+
+    width:60%;
+    margin:120px auto 50px;
+    background-image: linear-gradient(90deg, white 0% , white 50%, transparent 50%  ), url(../../Assests/images/login1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius:0 10px 10px 0;
+}
+
+.login-cont .frm{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 1px 2px 11px 6px #ddd0d0;
+    height: 440px;
+}
+.login-cont form *{
+    display: block;
+    margin: 0;
+    margin-left: 9%;
+
+}
+
+.login-cont form input{
+    height: 50px;
+    width: 50%;
+    padding:10px ;
+    border: none;
+    outline: none; 
+    margin-bottom: 10px;
+}
+
+.login-cont form label{
+    color:#b66b6b;
+}
+.login-cont form input:not(:placeholder-shown){
+    border-bottom: #d38989 solid 2px;
+}
+
+.login-cont form button{
+    margin-left: 24%;
+}
+.login-cont .bot{
+    text-align:center ;
+} 
+
+@media only screen and (max-width: 860px) {
+    .login-cont{
+        width: 88%;
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    .login-cont{
+        width: 80%;
+        margin-top: 110px;
+        background-image: linear-gradient( rgba(255,255,255,.4) .5% , rgba(255,255,255,.8) 80% ), url(../../Assests/images/login1.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    
+    }
+
+    .login-cont .frm{
+        width:100%;
+        margin: auto;
+        padding: 2.5% 0;
+        color: #702b2b;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .login-cont form *{
+        display: block;
+        margin: 0;
+        margin-left: 0;
+    
+    }
+    .login-cont form input{
+        height: 30px;
+        width: 50%;
+        margin: 10px 25%;
+        padding: 5px;
+
+    }
+    
+    .login-cont form label{
+        color: #702b2b;
+    }
+}
+
+
+
+
+/* login type */
+.logType-con {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    font-size: 1.01em;
+}
+
+.logType-con h1 {
+    text-align: center;
+}
+
+.logType-con * {
+    padding: 10px;
+
+}
+
+.logType-con .bdr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1.05em;
+}
+
+.logType-con .shape {
+    border: 1px solid #32be3e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+    box-shadow: 0px 5px 2px #249262;
+    margin-bottom: 25px;
+
+}
+
+.logType-con .shape * {
+    cursor: pointer;
+}
+
+/* radio button shape*/
+/* .rad span work as a radio button*/
+.logType-con .shape input~.rad {
+    background-color: #f7f6f6;
+    border: 1px solid #32be3e;
+}
+
+.logType-con .shape input:checked~.rad {
+    background-color: #32be3e;
+}
+
+/* put the shape you want to customize radio button*/
+.logType-con .rad {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #eee;
+    float: right;
+    cursor: pointer;
+
+}
+
+/* hide default radio in the pattern element*/
+.logType-con .shape input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.logType-con .shape img {
+    width: 80%;
+}
+
+.logType-con .last-section {
+    text-align: center;
+    color: #696868;
+}
+
+.logType-con .last-section .btn {
+    background-color: #32be3e;
+    width: 78%;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.logType-con .last-section .btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.logType-con .last-section a {
+    color: #32be3e;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logType-con .bdr {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logType-con .shape {
+        justify-content: space-evenly;
+        width: 35%;
+    }
+
+    .logType-con .shape img {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .logType-con .last-section .btn {
+        width: 50%;
+    }
+
+    .logType-con h1 {
+        text-align: left;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .logType-con .shape {
+        width: 30%;
+    }
+
+    .logType-con .last-section .btn {
+        width: 35%;
+    }
+
+}

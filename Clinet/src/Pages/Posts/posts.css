@@ -1,0 +1,197 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 40%;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #f0efef;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.post div:first-child {
+    color: #249262;
+}
+
+.post form * {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.post .upload {
+    width: 60%;
+    background-color: lightgray;
+    height: 150px;
+    cursor: pointer;
+    color: #249262;
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+}
+
+.post .upload-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.post label {
+    margin: 3px auto;
+    color: #b66b6b;
+}
+
+.post input,
+.post textarea,
+.post select {
+    margin-bottom: 20px;
+    border-bottom: none;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.post input:not(:placeholder-shown),
+.post textarea:not(:placeholder-shown),
+.post select:valid {
+    border-bottom: #d38989 solid 2px;
+    font-size: 1em;
+    color: #249262;
+}
+
+.post .btn {
+    display: block;
+    text-align: center;
+}
+
+/*slide show*/
+.post .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto 25px;
+}
+
+.post .carousel-image {
+    width: 100%;
+    height: 150px;
+}
+
+.post .carousel-button {
+    position: absolute;
+    top: 104%;
+    left: 65%;
+    right: 10%;
+    text-align: center;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #249262;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.2em;
+}
+
+.post .carousel-button.prev {
+    left: 10px;
+}
+
+.post .carousel-button.next {
+    right: 10px;
+}
+
+.post .carousel-delete {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border-radius: 100%;
+    background: transparent;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+    padding-left: 2%;
+}
+
+.error-message {
+    color: red;
+    margin-top: 4px; /* Adjust margin as needed */
+    word-spacing: 1px;
+}
+
+.post .carousel-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-left: 2%;
+}
+
+.post .carousel-delete:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}
+.post .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%; /* Make it round */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .post .delete-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+  }
+/*Responsive*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 576px) {
+    .post {
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .post {
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .post {
+        width: 50%;
+    }
+}
+

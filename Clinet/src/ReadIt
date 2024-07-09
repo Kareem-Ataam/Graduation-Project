@@ -1,0 +1,45 @@
+pages
+1. index.js ==> contains rendering of main component hold all the components in the page
+2. App.js ==> contains the routing of all components 
+     routing occured by using library called 'react-router-dom'
+     replace anchor tag by Link tag 
+3. Home.js ==> contains from three parts 
+     1. NavBar component  
+     2. content of homepage till now it only has a header chagnes based on the user type buyer or seller
+     3. footer component
+     the forst and third component added to all coming pages except Error404
+4. SignUp Pages:-
+      1. UserType.js ==> holds a first part of register operation  to choose you are a buyer or a seller
+      2. SignUpSeller ==> registration for seller , using specific API   (Api)
+         handling some validation for fields like username , password must be unique , not stored before
+         validate password conditions , and display that to user
+      3. SignUpBuyer ==> same as seller but with different fields and api  (Api)
+5. SignIn pages:-
+      1. Login.js ==> normal login page if the user has already account or register before (Api)
+      2. LoginType.js ==> used only if the user remove its state from local storage or showm for user that get to login first  without registeration ==> it is used to select the type of user for some restricts on home page if shown
+
+6. Forgot Password pages:- (still need api for the resetting)
+     1. Reset password by email or by mobile ==> need api but not assigned yet
+     2. OTP ==> code result from verification the email in step of resseting
+     3. NewPassword ==> choose a new password for your accound , and directly after submittion go to login page
+7. Error404 ==> if there is unauthorized access to page
+
+
+in fetching apis ==> installing axios library 
+
+--------------------------------------------------
+for part of backend code
+the addition part in program.cs ==> CORS service ==> line  82  till 90  ==>line  81 commented as Add CORS services
+
+for not sending the file only add the coming lines 
+
+ // Add CORS services
+ builder.Services.AddCors(options =>
+ {
+     options.AddPolicy("AllowOrigin", builder =>
+     {
+         builder.WithOrigins("http://localhost:3000") // Replace with your frontend URL
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+     });
+ });

@@ -53,7 +53,7 @@ Using the AWS management console create an EC2 instance of type t2.large. The fo
 ![EC2 storage configurations](./Images/ec2_storage_config.PNG)
 
 and now the EC2 instance is running and accessible from the internet.
-![EC2 instance image](./images/ec2_instance.png)
+![EC2 instance image](./Images/ec2_instance.png)
 
 ### _3. Install Jenkins, Docker and Trivy. Create a Sonarqube Container using Docker._
 

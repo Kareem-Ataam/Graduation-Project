@@ -182,7 +182,7 @@ and from Manage Jenkins --> Tools:
 
 ### _The Backend Pipeline:_
 
-![The backend pipeline image](./images/backend_pipe.png)
+![The backend pipeline image](./Images/backend_pipe.png)
 
 Let's walk through the steps of the pipeline step by step and implement each step:
 
